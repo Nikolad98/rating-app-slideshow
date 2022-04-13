@@ -2,12 +2,12 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    slides: ['bg-1', 'bg-2', 'bg-3'],
+    slides: 15,
     currentSlide: 1,
   },
   mutations: {
     showNext(state) {
-      if (state.currentSlide === state.slides.length) {
+      if (state.currentSlide === 18) {
         return;
       } else {
         state.currentSlide++;

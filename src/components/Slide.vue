@@ -13,20 +13,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.slide-enter-active {
-  transition: all 0.3s ease-out;
-}
-
+.slide-enter-active,
 .slide-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: opacity 0.8s ease;
 }
 
-.slide-enter-from {
-  transform: translateX(100%);
-  opacity: 0;
-}
+.slide-enter-from,
 .slide-leave-to {
-  transform: translateX(-100%);
   opacity: 0;
 }
 </style>
